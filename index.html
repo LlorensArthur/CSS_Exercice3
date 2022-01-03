@@ -3,35 +3,47 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>The division</title>
+    <title>The fieldsetision</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h3>Votre identité</h3>
-    <ol>
-        <li>Nom : <input type="text" name="name" placeholder="Nom"> </li>
-        <li>Prénom : <input type="text" placeholder="Prénom"></li>
-        <li>Adresse mail : <input type="email" placeholder="Adresse mail"></li>
-    </ol>
-    <h3>Adresse de livraison</h3>
-    <ol>
-        <li>Adresse : <input type="text"> </li>
-        <li>Code postal : <input type="text" placeholder="Code postal"></li>
-        <li>Ville : <input type="email" placeholder="Ville"></li>
-    </ol>
-    <h3>Information de règlement</h3>
-    <ol>
-        <li><p>Type de carte bancaire :</p>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">VISA</label><br>
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">Mastercard</label>     
-        </li>
-        <li>Numéro de carte : <input type="text" placeholder="Numéro de carte"></li>
-        <li>Code de sécurité : <input type="email" placeholder="Code de sécurité"></li>
-        <li>Nom du titulaire : <input type="email" placeholder="Nom du titulaire"></li>
-    </ol>
+    <fieldset class="blue">
+        <legend class="blue">Votre identité</legend>
+        <ol>
+            <li>Nom : <input type="text" name="name" placeholder="Nom"> </li>
+            <li>Prénom : <input type="text" placeholder="Prénom"></li>
+            <li>Adresse mail : <input type="email" placeholder="Adresse mail"></li>
+        </ol>
+    </fieldset>
+    <fieldset class="purple">
+        <legend class="purple">Adresse de livraison</legend>
+        <ol>
+            <li><label for="story">Adresse:</label>
+
+                <textarea id="story" name="story"
+                          rows="5" cols="25"></textarea>
+                </li>
+            <li>Code postal : <input type="text" placeholder="Code postal"></li>
+            <li>Ville : <input type="email" placeholder="Ville"></li>
+        </ol>
+    </fieldset>
+    <fieldset class="red">
+        <legend class="red">Information de règlement</legend>
+        <ol>
+            <li>
+                <p>Type de carte bancaire :</p>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">VISA</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">Mastercard</label>
+            </li>
+            <li>Numéro de carte : <input type="text" placeholder="Numéro de carte"></li>
+            <li>Code de sécurité : <input type="email" placeholder="Code de sécurité"></li>
+            <li>Nom du titulaire : <input type="email" placeholder="Nom du titulaire"></li>
+        </ol>
+    </fieldset>
+    <button>J'achète !</button>
 </body>
 
 </html>
